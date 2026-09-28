@@ -8,5 +8,8 @@ class History:
     def get_all(self):
         return self._calculations
 
+    def remove(self, index):
+        self._calculations.pop(index)
+
     def clear(self):
         self._calculations.clear()
